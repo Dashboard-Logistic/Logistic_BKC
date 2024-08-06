@@ -1,3 +1,10 @@
+function doGet() {
+  return HtmlService.createTemplateFromFile('index').evaluate()
+  .setTitle("Dashboard Logistic")
+  .setFaviconUrl("https://img2.pic.in.th/pic/LOgistic.png")
+  .addMetaTag('viewport', 'width=device-width, initial-scale=1')
+  .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
+}
 <!DOCTYPE html>
 
 <html>
